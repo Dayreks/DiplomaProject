@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0B4A7993-A20D-4C38-917E-A594AB725BA6"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A472CAAA-93F8-439D-A4F9-9090C68801E4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeGenerator/SourceEditorCommand.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "SourceEditorCommand"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "A472CAAA-93F8-439D-A4F9-9090C68801E4 - ec96a968c3041770"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeGenerator.SourceEditorCommand.extractSelectedText(from: __C.XCSourceTextBuffer, with: __C.XCSourceTextRange) -&gt; Swift.String"
+                  moduleName = "CodeGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/SourceEditorCommand.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "2332">
+               </Location>
+               <Location
+                  uuid = "A472CAAA-93F8-439D-A4F9-9090C68801E4 - 7d09bbfbfed4f261"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeGenerator.SourceEditorCommand.createSwiftFile(with: Swift.String, in: Swift.String, filename: Swift.String) -&gt; ()"
+                  moduleName = "CodeGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/SourceEditorCommand.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "340">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5674F990-F8C2-4853-AA32-560786ACF8E5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../CustomMacro/Sources/CustomMacro/CustomMacro.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "stringify(_:)"
+            landmarkType = "37">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

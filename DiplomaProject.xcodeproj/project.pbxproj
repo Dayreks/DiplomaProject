@@ -7,19 +7,82 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4724B6F82B5420190033C00C /* MethodMacroBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724B6F72B5420190033C00C /* MethodMacroBuilder.swift */; };
+		473A99C22B78F7FA00B860EB /* XCSourceTextBuffer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A99C12B78F7FA00B860EB /* XCSourceTextBuffer+Extension.swift */; };
+		473A99C42B7939AF00B860EB /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A99C32B7939AF00B860EB /* MenuManager.swift */; };
+		473A99C62B7939B100B860EB /* ScriptRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A99C52B7939B100B860EB /* ScriptRunner.swift */; };
+		473A99C82B7939B500B860EB /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A99C72B7939B500B860EB /* Helper.swift */; };
+		473A99CA2B7939BB00B860EB /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A99C92B7939BB00B860EB /* Builder.swift */; };
+		473A99CC2B793AB900B860EB /* MacroType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A99CB2B793AB900B860EB /* MacroType.swift */; };
 		47C28E9F2B2640C0007479D4 /* DiplomaProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C28E9E2B2640C0007479D4 /* DiplomaProjectApp.swift */; };
 		47C28EA12B2640C0007479D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C28EA02B2640C0007479D4 /* ContentView.swift */; };
 		47C28EA32B2640C1007479D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47C28EA22B2640C1007479D4 /* Assets.xcassets */; };
 		47C28EA62B2640C1007479D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47C28EA52B2640C1007479D4 /* Preview Assets.xcassets */; };
+		47C28EB42B26410E007479D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47C28EB32B26410E007479D4 /* Cocoa.framework */; };
+		47C28EB92B26410E007479D4 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C28EB82B26410E007479D4 /* SourceEditorExtension.swift */; };
+		47C28EBB2B26410E007479D4 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C28EBA2B26410E007479D4 /* SourceEditorCommand.swift */; };
+		47C28EC02B26410E007479D4 /* CodeGenerator.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 47C28EB12B26410E007479D4 /* CodeGenerator.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		47F1A3AF2B4ADDE8000701C6 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47C28EB52B26410E007479D4 /* XcodeKit.framework */; };
+		47F1A3B02B4ADDE8000701C6 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 47C28EB52B26410E007479D4 /* XcodeKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		47C28EBE2B26410E007479D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47C28E932B2640C0007479D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47C28EB02B26410E007479D4;
+			remoteInfo = CodeGenerator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		47C28EC42B26410F007479D4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				47C28EC02B26410E007479D4 /* CodeGenerator.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47F1A3B12B4ADDE8000701C6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				47F1A3B02B4ADDE8000701C6 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4724B6F72B5420190033C00C /* MethodMacroBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodMacroBuilder.swift; sourceTree = "<group>"; };
+		473A99C12B78F7FA00B860EB /* XCSourceTextBuffer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCSourceTextBuffer+Extension.swift"; sourceTree = "<group>"; };
+		473A99C32B7939AF00B860EB /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
+		473A99C52B7939B100B860EB /* ScriptRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRunner.swift; sourceTree = "<group>"; };
+		473A99C72B7939B500B860EB /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		473A99C92B7939BB00B860EB /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		473A99CB2B793AB900B860EB /* MacroType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroType.swift; sourceTree = "<group>"; };
 		47C28E9B2B2640C0007479D4 /* DiplomaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiplomaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C28E9E2B2640C0007479D4 /* DiplomaProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiplomaProjectApp.swift; sourceTree = "<group>"; };
 		47C28EA02B2640C0007479D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		47C28EA22B2640C1007479D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47C28EA52B2640C1007479D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		47C28EA72B2640C1007479D4 /* DiplomaProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DiplomaProject.entitlements; sourceTree = "<group>"; };
+		47C28EB12B26410E007479D4 /* CodeGenerator.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CodeGenerator.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		47C28EB32B26410E007479D4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		47C28EB52B26410E007479D4 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		47C28EB82B26410E007479D4 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		47C28EBA2B26410E007479D4 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		47C28EBC2B26410E007479D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47C28EBD2B26410E007479D4 /* CodeGenerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodeGenerator.entitlements; sourceTree = "<group>"; };
+		47C28EC52B2641D0007479D4 /* CustomMacro */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CustomMacro; path = ../CustomMacro; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,13 +93,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47C28EAE2B26410E007479D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47C28EB42B26410E007479D4 /* Cocoa.framework in Frameworks */,
+				47F1A3AF2B4ADDE8000701C6 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4724B6F62B541FDC0033C00C /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				473A99C92B7939BB00B860EB /* Builder.swift */,
+				4724B6F72B5420190033C00C /* MethodMacroBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		473A99CD2B793AC000B860EB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				473A99C32B7939AF00B860EB /* MenuManager.swift */,
+				473A99C52B7939B100B860EB /* ScriptRunner.swift */,
+				473A99C72B7939B500B860EB /* Helper.swift */,
+				473A99CB2B793AB900B860EB /* MacroType.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		473A99CE2B793ACF00B860EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				473A99C12B78F7FA00B860EB /* XCSourceTextBuffer+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		47C28E922B2640C0007479D4 = {
 			isa = PBXGroup;
 			children = (
 				47C28E9D2B2640C0007479D4 /* DiplomaProject */,
+				47C28EB72B26410E007479D4 /* CodeGenerator */,
+				47C28EC52B2641D0007479D4 /* CustomMacro */,
+				47C28EB22B26410E007479D4 /* Frameworks */,
 				47C28E9C2B2640C0007479D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				47C28E9B2B2640C0007479D4 /* DiplomaProject.app */,
+				47C28EB12B26410E007479D4 /* CodeGenerator.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +173,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		47C28EB22B26410E007479D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47C28EB32B26410E007479D4 /* Cocoa.framework */,
+				47C28EB52B26410E007479D4 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47C28EB72B26410E007479D4 /* CodeGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				473A99CD2B793AC000B860EB /* Helper */,
+				4724B6F62B541FDC0033C00C /* Builders */,
+				473A99CE2B793ACF00B860EB /* Extensions */,
+				47C28EB82B26410E007479D4 /* SourceEditorExtension.swift */,
+				47C28EBA2B26410E007479D4 /* SourceEditorCommand.swift */,
+				47C28EBC2B26410E007479D4 /* Info.plist */,
+				47C28EBD2B26410E007479D4 /* CodeGenerator.entitlements */,
+			);
+			path = CodeGenerator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +206,35 @@
 				47C28E972B2640C0007479D4 /* Sources */,
 				47C28E982B2640C0007479D4 /* Frameworks */,
 				47C28E992B2640C0007479D4 /* Resources */,
+				47C28EC42B26410F007479D4 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				47C28EBF2B26410E007479D4 /* PBXTargetDependency */,
 			);
 			name = DiplomaProject;
 			productName = DiplomaProject;
 			productReference = 47C28E9B2B2640C0007479D4 /* DiplomaProject.app */;
 			productType = "com.apple.product-type.application";
+		};
+		47C28EB02B26410E007479D4 /* CodeGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47C28EC12B26410F007479D4 /* Build configuration list for PBXNativeTarget "CodeGenerator" */;
+			buildPhases = (
+				47C28EAD2B26410E007479D4 /* Sources */,
+				47C28EAE2B26410E007479D4 /* Frameworks */,
+				47C28EAF2B26410E007479D4 /* Resources */,
+				47F1A3B12B4ADDE8000701C6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeGenerator;
+			productName = CodeGenerator;
+			productReference = 47C28EB12B26410E007479D4 /* CodeGenerator.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +247,9 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					47C28E9A2B2640C0007479D4 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					47C28EB02B26410E007479D4 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -118,6 +268,7 @@
 			projectRoot = "";
 			targets = (
 				47C28E9A2B2640C0007479D4 /* DiplomaProject */,
+				47C28EB02B26410E007479D4 /* CodeGenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +280,13 @@
 			files = (
 				47C28EA62B2640C1007479D4 /* Preview Assets.xcassets in Resources */,
 				47C28EA32B2640C1007479D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47C28EAF2B26410E007479D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +302,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47C28EAD2B26410E007479D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473A99C62B7939B100B860EB /* ScriptRunner.swift in Sources */,
+				473A99C82B7939B500B860EB /* Helper.swift in Sources */,
+				473A99CC2B793AB900B860EB /* MacroType.swift in Sources */,
+				473A99C42B7939AF00B860EB /* MenuManager.swift in Sources */,
+				473A99C22B78F7FA00B860EB /* XCSourceTextBuffer+Extension.swift in Sources */,
+				47C28EB92B26410E007479D4 /* SourceEditorExtension.swift in Sources */,
+				473A99CA2B7939BB00B860EB /* Builder.swift in Sources */,
+				4724B6F82B5420190033C00C /* MethodMacroBuilder.swift in Sources */,
+				47C28EBB2B26410E007479D4 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47C28EBF2B26410E007479D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47C28EB02B26410E007479D4 /* CodeGenerator */;
+			targetProxy = 47C28EBE2B26410E007479D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		47C28EA82B2640C1007479D4 /* Debug */ = {
@@ -268,9 +450,11 @@
 		47C28EAB2B2640C1007479D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DiplomaProject/DiplomaProject.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -295,9 +479,11 @@
 		47C28EAC2B2640C1007479D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DiplomaProject/DiplomaProject.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -314,6 +500,66 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bohdanarkhypchuk.ukma.ua.DiplomaProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		47C28EC22B26410F007479D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CodeGenerator/CodeGenerator.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 524636QW8M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CodeGenerator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CodeGenerator;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bohdanarkhypchuk.ukma.ua.DiplomaProject.CodeGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		47C28EC32B26410F007479D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CodeGenerator/CodeGenerator.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 524636QW8M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CodeGenerator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CodeGenerator;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bohdanarkhypchuk.ukma.ua.DiplomaProject.CodeGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -336,6 +582,15 @@
 			buildConfigurations = (
 				47C28EAB2B2640C1007479D4 /* Debug */,
 				47C28EAC2B2640C1007479D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47C28EC12B26410F007479D4 /* Build configuration list for PBXNativeTarget "CodeGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47C28EC22B26410F007479D4 /* Debug */,
+				47C28EC32B26410F007479D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
