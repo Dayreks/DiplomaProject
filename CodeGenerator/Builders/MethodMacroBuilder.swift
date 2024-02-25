@@ -32,41 +32,42 @@ class MethodMacroBuilder: Builder {
         pasteboard.setString(
             createMacro(
                 with: selectedText,
-                name: "stringify",
-                type: .freestanding
+                name: "methodify",
+                type: .attached
             ),
             forType: .string
         )
     }
     
-    func createMacro(
+    private func createMacro(
         with content: String,
         name: String,
         type: MacroType
     ) -> String {
         return """
-        \(type.rawValue)(expression)
-        public macro \(name)<T>(_ value: T) -> (T, String) = #externalMacro(module: "CustomMacroMacros", type: "\(name.capitalized)Macro")
-        
-        public struct \(name.capitalized)Macro: ExpressionMacro {
-        
-            public static func expansion(
-                of node: some FreestandingMacroExpansionSyntax,
-                in context: some MacroExpansionContext
-            ) -> ExprSyntax {
-        
-                return "\(content)"
+            \(type.rawValue)(member, names: arbitrary)
+            public macro \(name)() = #externalMacro(module: "CustomMacroMacros", type: "\(name.capitalized)Macro")
+            
+            public struct \(name.capitalized)Macro: MemberMacro {
+            
+                    public static func expansion(
+                        of node: AttributeSyntax,
+                        providingMembersOf declaration: some DeclGroupSyntax,
+                        in context: some MacroExpansionContext
+                    ) throws -> [DeclSyntax] {
+                        let contentString = \"\"\"\\
+                        \(content)
+                        \"\"\"
+                        return [.init(stringLiteral: contentString)]
+                }
             }
-        }
-
-        @main
-        struct CustomMacroPlugin: CompilerPlugin {
-            let providingMacros: [Macro.Type] = [
-                \(name.capitalized)Macro.self,
-            ]
-        }
-        """
+            
+            @main
+            struct CustomMacroPlugin: CompilerPlugin {
+                let providingMacros: [Macro.Type] = [
+                    \(name.capitalized)Macro.self,
+                ]
+            }
+            """
     }
-    
-    
 }
