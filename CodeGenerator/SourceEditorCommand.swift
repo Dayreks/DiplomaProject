@@ -19,6 +19,10 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
             }
         }
         
+        let scriptRunner = ScriptRunner()
+        scriptRunner.run(fileName: "FileCreateScript")
+        
         completionHandler(nil)
     }
 }
+

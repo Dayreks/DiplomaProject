@@ -47,8 +47,8 @@ class ScriptRunner {
         return event
     }
     
-    func run(functionName: String) {
-        guard let filePath = fileScriptPath(fileName: "CodeGeneratorScript") else {
+    func run(fileName: String) {
+        guard let filePath = fileScriptPath(fileName: fileName) else {
             return
         }
         
@@ -60,7 +60,8 @@ class ScriptRunner {
             return
         }
         
-        let event = eventDescriptior(functionName: functionName)
+        
+        let event = eventDescriptior(functionName: "")
         script.execute(withAppleEvent: event, completionHandler: { _, error in
             if let error = error {
                 print(error)

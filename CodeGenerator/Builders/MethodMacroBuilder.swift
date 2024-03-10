@@ -9,6 +9,7 @@ import Foundation
 import XcodeKit
 import AppKit
 
+
 class MethodMacroBuilder: Builder {
     
     var title: String {
@@ -38,13 +39,13 @@ class MethodMacroBuilder: Builder {
             forType: .string
         )
     }
-    
+
     private func createMacro(
         with content: String,
         name: String,
         type: MacroType
     ) -> String {
-        return """
+        """
             \(type.rawValue)(member, names: arbitrary)
             public macro \(name)() = #externalMacro(module: "CustomMacroMacros", type: "\(name.capitalized)Macro")
             
@@ -55,11 +56,12 @@ class MethodMacroBuilder: Builder {
                         providingMembersOf declaration: some DeclGroupSyntax,
                         in context: some MacroExpansionContext
                     ) throws -> [DeclSyntax] {
-                        let contentString = \"\"\"\\
-                        \(content)
-                        \"\"\"
+                        let contentString =
+            \"\"\"
+            \(content)
+            \"\"\"
                         return [.init(stringLiteral: contentString)]
-                }
+                    }
             }
             
             @main
