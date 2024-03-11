@@ -14,6 +14,7 @@
 		473A99C82B7939B500B860EB /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A99C72B7939B500B860EB /* Helper.swift */; };
 		473A99CA2B7939BB00B860EB /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A99C92B7939BB00B860EB /* Builder.swift */; };
 		473A99CC2B793AB900B860EB /* MacroType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A99CB2B793AB900B860EB /* MacroType.swift */; };
+		47B22A042B9F57D900F1236D /* FileCreateScript.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 47B22A032B9F57D900F1236D /* FileCreateScript.scpt */; };
 		47C28E9F2B2640C0007479D4 /* DiplomaProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C28E9E2B2640C0007479D4 /* DiplomaProjectApp.swift */; };
 		47C28EA12B2640C0007479D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C28EA02B2640C0007479D4 /* ContentView.swift */; };
 		47C28EA32B2640C1007479D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47C28EA22B2640C1007479D4 /* Assets.xcassets */; };
@@ -79,6 +80,7 @@
 		473A99C72B7939B500B860EB /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		473A99C92B7939BB00B860EB /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		473A99CB2B793AB900B860EB /* MacroType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroType.swift; sourceTree = "<group>"; };
+		47B22A032B9F57D900F1236D /* FileCreateScript.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = FileCreateScript.scpt; sourceTree = "<group>"; };
 		47C28E9B2B2640C0007479D4 /* DiplomaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiplomaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C28E9E2B2640C0007479D4 /* DiplomaProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiplomaProjectApp.swift; sourceTree = "<group>"; };
 		47C28EA02B2640C0007479D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 		47C28EB72B26410E007479D4 /* CodeGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				47B22A032B9F57D900F1236D /* FileCreateScript.scpt */,
 				473A99CD2B793AC000B860EB /* Helper */,
 				4724B6F62B541FDC0033C00C /* Builders */,
 				473A99CE2B793ACF00B860EB /* Extensions */,
@@ -304,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47B22A042B9F57D900F1236D /* FileCreateScript.scpt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -48,18 +48,13 @@ class ScriptRunner {
     }
     
     func run(fileName: String) {
-        guard let filePath = fileScriptPath(fileName: fileName) else {
+        guard
+            let filePath = fileScriptPath(fileName: fileName),
+            let script = try? NSUserAppleScriptTask(url: filePath),
+            FileManager.default.fileExists(atPath: filePath.path)
+        else {
             return
         }
-        
-        guard FileManager.default.fileExists(atPath: filePath.path) else {
-            return
-        }
-        
-        guard let script = try? NSUserAppleScriptTask(url: filePath) else {
-            return
-        }
-        
         
         let event = eventDescriptior(functionName: "")
         script.execute(withAppleEvent: event, completionHandler: { _, error in
