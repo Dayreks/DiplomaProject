@@ -11,7 +11,8 @@ import Foundation
 struct MenuManager {
     
     static let builders: [Builder] = [
-        MethodMacroBuilder()
+        MethodMacroBuilder(),
+        ViewCellBuilder()
     ]
     
     static func find(commandIdentifier: String) -> Builder? {

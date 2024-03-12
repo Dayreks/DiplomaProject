@@ -9,7 +9,6 @@ import Foundation
 import XcodeKit
 import AppKit
 
-
 class MethodMacroBuilder: Builder {
     
     var title: String {
