@@ -46,8 +46,6 @@ class MethodMacroBuilder: Builder {
             return ""
         }
         
-        DeclS
-        SwiftSyntaxBuilder(with: "")
         
         return """
             \(type.rawValue)(member, names: arbitrary)
