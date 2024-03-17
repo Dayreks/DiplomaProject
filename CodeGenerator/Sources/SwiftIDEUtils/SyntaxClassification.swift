@@ -10,8 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) import SwiftSyntax
-
 public enum SyntaxClassification: Sendable {
   /// An attribute starting with an `@`.
   case attribute

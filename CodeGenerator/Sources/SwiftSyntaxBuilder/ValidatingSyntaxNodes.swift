@@ -10,16 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-import SwiftDiagnostics
-import SwiftParserDiagnostics
-public import SwiftSyntax
-#else
-import SwiftDiagnostics
-import SwiftParserDiagnostics
-import SwiftSyntax
-#endif
-
 extension SyntaxProtocol {
   /// If `node` has contains no syntax errors, return `node`, otherwise
   /// throw an error with diagnostics describing the syntax errors.

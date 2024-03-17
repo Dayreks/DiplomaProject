@@ -10,8 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) import SwiftSyntax
-
 // MARK: - Unexpected nodes
 
 extension RawUnexpectedNodesSyntax {

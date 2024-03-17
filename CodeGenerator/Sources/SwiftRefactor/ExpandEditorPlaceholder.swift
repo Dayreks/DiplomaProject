@@ -10,18 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-import SwiftBasicFormat
-import SwiftParser
-public import SwiftSyntax
-import SwiftSyntaxBuilder
-#else
-import SwiftBasicFormat
-import SwiftParser
-import SwiftSyntax
-import SwiftSyntaxBuilder
-#endif
-
 /// Expands an editor placeholder, taking into accounts its provided type
 /// information (if any).
 ///

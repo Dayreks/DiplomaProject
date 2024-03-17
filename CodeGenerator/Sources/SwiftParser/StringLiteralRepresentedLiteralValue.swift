@@ -10,11 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-@_spi(RawSyntax) @_spi(BumpPtrAllocator) public import SwiftSyntax
-#else
-@_spi(RawSyntax) @_spi(BumpPtrAllocator) import SwiftSyntax
-#endif
 
 extension StringLiteralExprSyntax {
 

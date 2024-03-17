@@ -10,12 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-public import SwiftSyntax
-#else
-import SwiftSyntax
-#endif
-
 extension CodeBlockItemListBuilder {
   public static func buildExpression(_ expression: some ExprSyntaxProtocol) -> Component {
     buildExpression(CodeBlockItemSyntax(item: .expr(ExprSyntax(expression))))

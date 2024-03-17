@@ -10,7 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) import SwiftSyntax
 
 // MARK: - Check multiline string literal indentation
 

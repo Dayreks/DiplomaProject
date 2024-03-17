@@ -9,15 +9,6 @@
 // See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
 //
 //===----------------------------------------------------------------------===//
-
-#if swift(>=6)
-@_spi(RawSyntax) import SwiftParser
-@_spi(RawSyntax) public import SwiftSyntax
-#else
-@_spi(RawSyntax) import SwiftParser
-@_spi(RawSyntax) import SwiftSyntax
-#endif
-
 // MARK: - ArrayElementListSyntax
 
 extension ArrayElementListSyntax {
@@ -294,16 +285,6 @@ extension String {
     result += input
 
     return String(result)
-  }
-}
-
-fileprivate extension Unicode.Scalar {
-  /// Whether this character represents a printable ASCII character,
-  /// for the purposes of pattern parsing.
-  var isPrintableASCII: Bool {
-    // Exclude non-printables before the space character U+20, and anything
-    // including and above the DEL character U+7F.
-    return self.value >= 0x20 && self.value < 0x7F
   }
 }
 

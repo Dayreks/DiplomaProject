@@ -10,13 +10,7 @@
 // See https://swift.org/LICENSE.txt for license information
 // See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
 //
-//===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-@_spi(ExperimentalLanguageFeatures) public import SwiftSyntax
-#else
-@_spi(ExperimentalLanguageFeatures) import SwiftSyntax
-#endif
 
 // MARK: - AccessorDeclListBuilder
 

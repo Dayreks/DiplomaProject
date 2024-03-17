@@ -10,7 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) import SwiftSyntax
 
 protocol NominalTypeDeclarationTrait {
   associatedtype PrimaryOrGenerics

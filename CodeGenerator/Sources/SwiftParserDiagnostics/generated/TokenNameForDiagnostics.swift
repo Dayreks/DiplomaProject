@@ -12,8 +12,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) import SwiftSyntax
-
 extension TokenKind {
   var nameForDiagnostics: String {
     switch self {

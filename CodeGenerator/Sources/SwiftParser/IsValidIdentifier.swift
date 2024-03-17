@@ -10,7 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) import SwiftSyntax
 
 /// Context in which to check if a name can be used as an identifier.
 ///

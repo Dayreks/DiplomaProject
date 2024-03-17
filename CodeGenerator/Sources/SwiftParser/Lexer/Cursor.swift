@@ -10,8 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) @_spi(BumpPtrAllocator) import SwiftSyntax
-
 extension SyntaxText {
   fileprivate func containsPlaceholderEnd() -> Bool {
     guard self.count >= 2 else {

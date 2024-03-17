@@ -10,12 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-public import SwiftSyntax
-#else
-import SwiftSyntax
-#endif
-
 /// Format an integer literal by inserting underscores at base-appropriate
 /// locations.
 ///

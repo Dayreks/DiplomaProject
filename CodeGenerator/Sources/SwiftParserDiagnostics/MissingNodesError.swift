@@ -10,16 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-import SwiftBasicFormat
-import SwiftDiagnostics
-@_spi(RawSyntax) public import SwiftSyntax
-#else
-import SwiftBasicFormat
-import SwiftDiagnostics
-@_spi(RawSyntax) import SwiftSyntax
-#endif
-
 // MARK: - Shared code
 
 /// Returns the bottommost node that is an ancestor of all nodes in `nodes`.

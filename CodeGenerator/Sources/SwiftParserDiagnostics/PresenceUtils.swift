@@ -10,8 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-import SwiftBasicFormat
-@_spi(RawSyntax) import SwiftSyntax
 
 /// Walks a tree and checks whether the tree contained any present tokens.
 class PresentNodeChecker: SyntaxAnyVisitor {

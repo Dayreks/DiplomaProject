@@ -10,10 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-import SwiftDiagnostics
-@_spi(Diagnostics) import SwiftParser
-@_spi(RawSyntax) import SwiftSyntax
-
 extension ParseDiagnosticsGenerator {
   func handleMissingToken(_ missingToken: TokenSyntax) {
     guard let invalidToken = missingToken.previousToken(viewMode: .all),

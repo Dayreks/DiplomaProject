@@ -10,7 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-import SwiftSyntax
 
 extension WithTrailingCommaSyntax {
   func ensuringTrailingComma() -> Self {

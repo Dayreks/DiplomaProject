@@ -10,7 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-import SwiftSyntax
 
 /// Describes the relative precedence of two groups.
 enum Precedence: Sendable {

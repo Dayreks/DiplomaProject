@@ -10,7 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) import SwiftSyntax
 
 extension TokenConsumer {
   mutating func atStartOfExpression() -> Bool {

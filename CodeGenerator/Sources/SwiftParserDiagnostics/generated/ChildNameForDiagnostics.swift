@@ -10,9 +10,7 @@
 // See https://swift.org/LICENSE.txt for license information
 // See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
 //
-//===----------------------------------------------------------------------===//
-
-@_spi(ExperimentalLanguageFeatures) import SwiftSyntax
+//===----------------------------------------------------------------------===// 
 
 private func childNameForDiagnostics(_ keyPath: AnyKeyPath) -> String? {
   switch keyPath {

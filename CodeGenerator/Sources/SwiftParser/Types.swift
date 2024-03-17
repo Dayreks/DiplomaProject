@@ -10,8 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) @_spi(ExperimentalLanguageFeatures) import SwiftSyntax
-
 extension Parser {
   /// Parse a type.
   mutating func parseType(misplacedSpecifiers: [RawTokenSyntax] = []) -> RawTypeSyntax {

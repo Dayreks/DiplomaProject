@@ -10,13 +10,12 @@
 //
 //===----------------------------------------------------------------------===//
 
-import SwiftSyntax
 
-/// Prefabricated operator precedence graphs.
+/// Prefabricated SwiftOperator precedence graphs.
 extension OperatorTable {
-  /// Operator precedence graph for the logical operators '&&' and '||', for
+  /// SwiftOperator precedence graph for the logical SwiftOperators '&&' and '||', for
   /// example as it is used in `#if` processing.
-  public static var logicalOperators: OperatorTable {
+  public static var logicalSwiftOperators: OperatorTable {
     let precedenceGroups: [PrecedenceGroup] = [
       PrecedenceGroup(
         name: "LogicalConjunctionPrecedence",
@@ -32,14 +31,14 @@ extension OperatorTable {
       ),
     ]
 
-    let operators: [Operator] = [
-      Operator(kind: .prefix, name: "!"),
-      Operator(
+    let operators: [SwiftOperator] = [
+        SwiftOperator(kind: .prefix, name: "!"),
+      SwiftOperator(
         kind: .infix,
         name: "&&",
         precedenceGroup: "LogicalConjunctionPrecedence"
       ),
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "||",
         precedenceGroup: "LogicalDisjunctionPrecedence"
@@ -52,15 +51,15 @@ extension OperatorTable {
     )
   }
 
-  /// Operator precedence graph for the Swift standard library.
+  /// SwiftOperator precedence graph for the Swift standard library.
   ///
-  /// This describes the operators within the Swift standard library at the
+  /// This describes the SwiftOperators within the Swift standard library at the
   /// type of this writing. It can be used to approximate the behavior one
-  /// would get from parsing the actual Swift standard library's operators
+  /// would get from parsing the actual Swift standard library's SwiftOperators
   /// without requiring access to the standard library source code. However,
-  /// because it does not incorporate user-defined operators, it will only
+  /// because it does not incorporate user-defined SwiftOperators, it will only
   /// ever be useful for a quick approximation.
-  public static var standardOperators: OperatorTable {
+  public static var standardSwiftOperators: OperatorTable {
     let precedenceGroups: [PrecedenceGroup] = [
       PrecedenceGroup(
         name: "AssignmentPrecedence",
@@ -136,294 +135,294 @@ extension OperatorTable {
       ),
     ]
 
-    let operators: [Operator] = [
-      // Standard postfix operators.
-      Operator(kind: .postfix, name: "++"),
-      Operator(kind: .postfix, name: "--"),
-      Operator(kind: .postfix, name: "..."),
+    let operators: [SwiftOperator] = [
+      // Standard postfix SwiftOperators.
+      SwiftOperator(kind: .postfix, name: "++"),
+      SwiftOperator(kind: .postfix, name: "--"),
+      SwiftOperator(kind: .postfix, name: "..."),
 
-      // Standard prefix operators.
-      Operator(kind: .prefix, name: "++"),
-      Operator(kind: .prefix, name: "--"),
-      Operator(kind: .prefix, name: "!"),
-      Operator(kind: .prefix, name: "~"),
-      Operator(kind: .prefix, name: "+"),
-      Operator(kind: .prefix, name: "-"),
-      Operator(kind: .prefix, name: "..."),
-      Operator(kind: .prefix, name: "..<"),
+      // Standard prefix SwiftOperators.
+      SwiftOperator(kind: .prefix, name: "++"),
+      SwiftOperator(kind: .prefix, name: "--"),
+      SwiftOperator(kind: .prefix, name: "!"),
+      SwiftOperator(kind: .prefix, name: "~"),
+      SwiftOperator(kind: .prefix, name: "+"),
+      SwiftOperator(kind: .prefix, name: "-"),
+      SwiftOperator(kind: .prefix, name: "..."),
+      SwiftOperator(kind: .prefix, name: "..<"),
 
       // "Exponentiative"
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "<<",
         precedenceGroup: "BitwiseShiftPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "&<<",
         precedenceGroup: "BitwiseShiftPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: ">>",
         precedenceGroup: "BitwiseShiftPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "&>>",
         precedenceGroup: "BitwiseShiftPrecedence"
       ),
 
       // "Multiplicative"
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "*",
         precedenceGroup: "MultiplicationPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "&*",
         precedenceGroup: "MultiplicationPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "/",
         precedenceGroup: "MultiplicationPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "%",
         precedenceGroup: "MultiplicationPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "&",
         precedenceGroup: "MultiplicationPrecedence"
       ),
 
       // "Additive"
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "+",
         precedenceGroup: "AdditionPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "&+",
         precedenceGroup: "AdditionPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "-",
         precedenceGroup: "AdditionPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "&-",
         precedenceGroup: "AdditionPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "|",
         precedenceGroup: "AdditionPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "^",
         precedenceGroup: "AdditionPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "...",
         precedenceGroup: "RangeFormationPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "..<",
         precedenceGroup: "RangeFormationPrecedence"
       ),
 
       // "Coalescing"
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "??",
         precedenceGroup: "NilCoalescingPrecedence"
       ),
 
       // "Comparative"
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "<",
         precedenceGroup: "ComparisonPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "<=",
         precedenceGroup: "ComparisonPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: ">",
         precedenceGroup: "ComparisonPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: ">=",
         precedenceGroup: "ComparisonPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "==",
         precedenceGroup: "ComparisonPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "!=",
         precedenceGroup: "ComparisonPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "===",
         precedenceGroup: "ComparisonPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "!==",
         precedenceGroup: "ComparisonPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "~=",
         precedenceGroup: "ComparisonPrecedence"
       ),
 
       // "Conjunctive"
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "&&",
         precedenceGroup: "LogicalConjunctionPrecedence"
       ),
 
       // "Disjunctive"
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "||",
         precedenceGroup: "LogicalDisjunctionPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "*=",
         precedenceGroup: "AssignmentPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "&*=",
         precedenceGroup: "AssignmentPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "/=",
         precedenceGroup: "AssignmentPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "%=",
         precedenceGroup: "AssignmentPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "+=",
         precedenceGroup: "AssignmentPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "&+=",
         precedenceGroup: "AssignmentPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "-=",
         precedenceGroup: "AssignmentPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "&-=",
         precedenceGroup: "AssignmentPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "<<=",
         precedenceGroup: "AssignmentPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "&<<=",
         precedenceGroup: "AssignmentPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: ">>=",
         precedenceGroup: "AssignmentPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "&>>=",
         precedenceGroup: "AssignmentPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "&=",
         precedenceGroup: "AssignmentPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "^=",
         precedenceGroup: "AssignmentPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "|=",
         precedenceGroup: "AssignmentPrecedence"
       ),
 
-      Operator(
+      SwiftOperator(
         kind: .infix,
         name: "~>"
       ),

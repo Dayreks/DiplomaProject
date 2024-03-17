@@ -10,8 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) import SwiftSyntax
-
 extension Parser {
   /// Consumes and returns all remaining tokens in the source file.
   mutating func consumeRemainingTokens() -> [RawSyntax] {

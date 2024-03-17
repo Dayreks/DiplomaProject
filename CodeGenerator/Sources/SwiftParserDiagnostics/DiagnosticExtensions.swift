@@ -10,10 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-import SwiftBasicFormat
-import SwiftDiagnostics
-@_spi(RawSyntax) import SwiftSyntax
-
 extension FixIt {
   /// A more complex set of changes that affects multiple syntax nodes and thus
   /// produces multiple `FixIt.Change`s. This allows us to e.g. mark a node as

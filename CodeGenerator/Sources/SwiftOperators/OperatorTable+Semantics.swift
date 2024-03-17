@@ -10,12 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-public import SwiftSyntax
-#else
-import SwiftSyntax
-#endif
-
 extension PrecedenceGroup {
   /// Form the semantic definition of a precedence group given its syntax.
   ///
@@ -71,7 +65,7 @@ extension PrecedenceGroup {
   }
 }
 
-extension Operator {
+extension SwiftOperator {
   /// Form the semantic definition of an operator given its syntax.
   ///
   /// TODO: This ignores all semantic errors.
@@ -109,7 +103,7 @@ extension OperatorTable {
         _ node: OperatorDeclSyntax
       ) -> SyntaxVisitorContinueKind {
         opPrecedence.record(
-          Operator(from: node),
+            SwiftOperator(from: node),
           errorHandler: errorHandler
         )
         return .skipChildren

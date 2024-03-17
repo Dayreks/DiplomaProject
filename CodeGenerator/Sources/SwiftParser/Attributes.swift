@@ -10,7 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) import SwiftSyntax
 
 extension Parser {
   mutating func parseAttributeList() -> RawAttributeListSyntax {

@@ -10,12 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-@_spi(RawSyntax) public import SwiftSyntax
-#else
-@_spi(RawSyntax) import SwiftSyntax
-#endif
-
 extension Lexer {
   /// A trivia-delimited region of source text.
   ///

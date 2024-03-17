@@ -10,16 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-public import SwiftDiagnostics
-@_spi(Diagnostics) import SwiftParser
-@_spi(RawSyntax) public import SwiftSyntax
-#else
-import SwiftDiagnostics
-@_spi(Diagnostics) import SwiftParser
-@_spi(RawSyntax) import SwiftSyntax
-#endif
-
 fileprivate let diagnosticDomain: String = "SwiftLexer"
 
 /// An error diagnostic whose ID is determined by the diagnostic's type.
@@ -180,7 +170,7 @@ public struct ErrorToWarningDowngrade: TokenWarning {
 
 // MARK: - Convert TokenDiagnostic from SwiftSyntax to error messages
 
-public extension SwiftSyntax.TokenDiagnostic {
+public extension TokenDiagnostic {
   /// `tokenText` is the entire text of the token in which the ``TokenDiagnostic``
   /// occurred, including trivia.
   @_spi(RawSyntax)

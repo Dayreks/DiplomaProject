@@ -10,11 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-public import SwiftSyntax
-#else
-import SwiftSyntax
-#endif
 
 /// Format a string literal by inserting or removing the appropriate number of
 /// raw string `#` delimiters.

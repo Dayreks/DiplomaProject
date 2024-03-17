@@ -10,8 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) @_spi(ExperimentalLanguageFeatures) import SwiftSyntax
-
 extension TokenConsumer {
   /// Returns `true` if the current token represents the start of a statement
   /// item.

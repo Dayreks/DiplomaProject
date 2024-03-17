@@ -10,17 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-public import SwiftBasicFormat
-import SwiftDiagnostics
-@_spi(RawSyntax) @_spi(Testing) import SwiftParser
-@_spi(RawSyntax) public import SwiftSyntax
-#else
-import SwiftBasicFormat
-import SwiftDiagnostics
-@_spi(RawSyntax) @_spi(Testing) import SwiftParser
-@_spi(RawSyntax) import SwiftSyntax
-#endif
 
 /// An individual interpolated syntax node.
 struct InterpolatedSyntaxNode {

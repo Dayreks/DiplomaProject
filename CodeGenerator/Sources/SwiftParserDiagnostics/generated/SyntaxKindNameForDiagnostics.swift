@@ -12,7 +12,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(ExperimentalLanguageFeatures) import SwiftSyntax
 
 extension SyntaxKind {
   var nameForDiagnostics: String? {

@@ -10,12 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-@_spi(RawSyntax) public import SwiftSyntax
-#else
-@_spi(RawSyntax) import SwiftSyntax
-#endif
-
 /// A rewriter that performs a "basic" format of the passed tree.
 ///
 /// The base implementation is primarily aimed at adding whitespace where
@@ -660,19 +654,5 @@ fileprivate extension TokenSyntax {
     default:
       return false
     }
-  }
-}
-
-fileprivate extension SyntaxProtocol {
-  /// Returns this node or the first ancestor that satisfies `condition`.
-  func ancestorOrSelf<T>(mapping map: (Syntax) -> T?) -> T? {
-    var walk: Syntax? = Syntax(self)
-    while let unwrappedParent = walk {
-      if let mapped = map(unwrappedParent) {
-        return mapped
-      }
-      walk = unwrappedParent.parent
-    }
-    return nil
   }
 }

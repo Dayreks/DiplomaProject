@@ -8,10 +8,6 @@
 // See https://swift.org/LICENSE.txt for license information
 // See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
 //
-//===----------------------------------------------------------------------===//
-
-import SwiftDiagnostics
-@_spi(RawSyntax) import SwiftSyntax
 
 /// A diagnostic that `MultiLineStringLiteralIndentationDiagnosticsGenerator` is building.
 /// As indentation errors are found on more lines, this diagnostic is modified

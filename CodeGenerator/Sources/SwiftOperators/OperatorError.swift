@@ -8,13 +8,7 @@
 // See https://swift.org/LICENSE.txt for license information
 // See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
 //
-//===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-public import SwiftSyntax
-#else
-import SwiftSyntax
-#endif
 
 /// Describes errors that can occur when working with user-defined operators.
 public enum OperatorError: Error, Sendable {
@@ -26,7 +20,7 @@ public enum OperatorError: Error, Sendable {
   case missingGroup(PrecedenceGroupName, referencedFrom: Syntax)
 
   /// Error produced when a given operator already exists.
-  case operatorAlreadyExists(existing: Operator, new: Operator)
+  case operatorAlreadyExists(existing: SwiftOperator, new: SwiftOperator)
 
   /// The named operator is missing from the precedence graph.
   case missingOperator(OperatorName, referencedFrom: Syntax)

@@ -10,10 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-import SwiftBasicFormat
-@_spi(Diagnostics) import SwiftParser
-@_spi(RawSyntax) @_spi(ExperimentalLanguageFeatures) import SwiftSyntax
-
 extension UnexpectedNodesSyntax {
   func presentTokens(satisfying isIncluded: (TokenSyntax) -> Bool) -> [TokenSyntax] {
     return self.children(viewMode: .sourceAccurate).compactMap({ $0.as(TokenSyntax.self) }).filter(isIncluded)

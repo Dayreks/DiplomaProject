@@ -10,7 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) import SwiftSyntax
 
 /// A type that consumes  instances of ``TokenSyntax``.
 protocol TokenConsumer {

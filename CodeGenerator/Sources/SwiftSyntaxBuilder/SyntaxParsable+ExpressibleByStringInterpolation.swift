@@ -10,18 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-import SwiftDiagnostics
-public import SwiftParser
-import SwiftParserDiagnostics
-import SwiftSyntax
-#else
-import SwiftDiagnostics
-import SwiftParser
-import SwiftParserDiagnostics
-import SwiftSyntax
-#endif
-
 // Don't introduce a dependency on OSLog when building SwiftSyntax using CMake
 // for the compiler.
 #if canImport(OSLog) && !SWIFTSYNTAX_NO_OSLOG_DEPENDENCY

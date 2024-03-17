@@ -9,13 +9,6 @@
 // See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
 //
 //===----------------------------------------------------------------------===//
-
-#if swift(>=6)
-@_spi(RawSyntax) public import SwiftSyntax
-#else
-@_spi(RawSyntax) import SwiftSyntax
-#endif
-
 // MARK: - TokenSpecSet
 
 @_spi(Diagnostics)
@@ -535,7 +528,7 @@ extension RawDeinitializerEffectSpecifiersSyntax: RawMisplacedEffectSpecifiersTr
   init(
     asyncSpecifier: RawTokenSyntax?,
     throwsClause: RawThrowsClauseSyntax?,
-    arena: __shared SwiftSyntax.SyntaxArena
+    arena: __shared SyntaxArena
   ) {
     // `throwsSpecifier` should never be present because `parseMisplacedEffectSpecifiers()` only creates missing tokens
     // and `CorrectThrowsTokenKinds` is an empty `TokenSpecSet`.

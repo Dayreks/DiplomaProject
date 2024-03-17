@@ -10,7 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) import SwiftSyntax
 
 extension Parser {
   mutating func parseDeclModifierList() -> RawDeclModifierListSyntax {

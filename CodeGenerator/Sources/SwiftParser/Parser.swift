@@ -10,12 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-@_spi(RawSyntax) public import SwiftSyntax
-#else
-@_spi(RawSyntax) import SwiftSyntax
-#endif
-
 /// A parser for the Swift programming language.
 ///
 /// ``Parser`` implements a recursive descent parser that produces a SwiftSyntax

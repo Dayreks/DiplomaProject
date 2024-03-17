@@ -10,7 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) import SwiftSyntax
 
 extension DeclarationModifier {
   var canHaveParenthesizedArgument: Bool {

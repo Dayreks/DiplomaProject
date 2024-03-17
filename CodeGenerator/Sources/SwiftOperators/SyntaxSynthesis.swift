@@ -10,12 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-public import SwiftSyntax
-#else
-import SwiftSyntax
-#endif
-
 fileprivate extension OperatorKind {
   var keyword: Keyword {
     switch self {
@@ -26,7 +20,7 @@ fileprivate extension OperatorKind {
   }
 }
 
-extension Operator {
+extension SwiftOperator {
   /// Synthesize a syntactic representation of this operator based on its
   /// semantic definition.
   public func synthesizedSyntax() -> OperatorDeclSyntax {

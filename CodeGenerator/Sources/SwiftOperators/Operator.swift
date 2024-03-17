@@ -10,11 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-public import SwiftSyntax
-#else
-import SwiftSyntax
-#endif
 
 /// Names an operator.
 ///
@@ -35,7 +30,7 @@ public enum OperatorKind: String, Sendable {
 }
 
 /// Describes an operator.
-public struct Operator: Sendable {
+public struct SwiftOperator: Sendable {
   public let kind: OperatorKind
   public let name: OperatorName
   public let precedenceGroup: PrecedenceGroupName?
@@ -54,7 +49,7 @@ public struct Operator: Sendable {
   }
 }
 
-extension Operator: CustomStringConvertible {
+extension SwiftOperator: CustomStringConvertible {
   /// The description of an operator is the source code that produces it.
   public var description: String {
     (syntax ?? synthesizedSyntax()).description

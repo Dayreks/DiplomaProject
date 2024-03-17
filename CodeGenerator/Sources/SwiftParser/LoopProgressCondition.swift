@@ -10,7 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) import SwiftSyntax
 
 /// A type that can be used to make sure that a loop in the parser makes process.
 ///

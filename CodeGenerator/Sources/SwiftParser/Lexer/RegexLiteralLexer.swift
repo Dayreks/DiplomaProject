@@ -10,7 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) @_spi(BumpPtrAllocator) import SwiftSyntax
 
 /// A separate lexer specifically for regex literals.
 fileprivate struct RegexLiteralLexer {

@@ -12,8 +12,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-@_spi(RawSyntax) import SwiftSyntax
-
 extension TokenSpec {
   static var arrow: TokenSpec {
     return TokenSpec(.arrow)

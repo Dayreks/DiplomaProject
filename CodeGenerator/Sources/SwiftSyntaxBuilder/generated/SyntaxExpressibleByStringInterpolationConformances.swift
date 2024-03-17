@@ -12,7 +12,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-import SwiftSyntax
 
 extension AccessorBlockSyntax: SyntaxExpressibleByStringInterpolation {}
 

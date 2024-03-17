@@ -10,11 +10,7 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-@_spi(RawSyntax) public import SwiftSyntax
-#else
-@_spi(RawSyntax) import SwiftSyntax
-#endif
+
 
 fileprivate extension SyntaxCollection {
   static func parse(

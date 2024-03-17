@@ -10,16 +10,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-#if swift(>=6)
-public import SwiftDiagnostics
-@_spi(Diagnostics) import SwiftParser
-@_spi(RawSyntax) public import SwiftSyntax
-#else
-import SwiftDiagnostics
-@_spi(Diagnostics) import SwiftParser
-@_spi(RawSyntax) import SwiftSyntax
-#endif
-
 fileprivate let diagnosticDomain: String = "SwiftParser"
 
 /// An error diagnostic whose ID is determined by the diagnostic's type.
