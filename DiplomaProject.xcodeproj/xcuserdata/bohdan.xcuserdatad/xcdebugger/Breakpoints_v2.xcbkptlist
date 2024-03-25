@@ -103,97 +103,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2492BBC9-EFEB-4BFB-A12C-DCC1EC191638"
-            shouldBeEnabled = "Yes"
+            uuid = "FEF7C9B4-3A7A-43E4-ADA7-E4EB54CF55FF"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CodeGenerator/Builders/ViewCellBuilder.swift"
+            filePath = "CodeGenerator/Builders/MethodMacroBuilder.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "createMacro(with:type:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2492BBC9-EFEB-4BFB-A12C-DCC1EC191638 - a62d33ee270f0306"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CodeGenerator.ViewCellBuilder.createMacro(with: Swift.String, type: CodeGenerator.MacroType) -&gt; Swift.String"
-                  moduleName = "CodeGenerator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Builders/ViewCellBuilder.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "1296">
-               </Location>
-               <Location
-                  uuid = "2492BBC9-EFEB-4BFB-A12C-DCC1EC191638 - a62d33ee270f0325"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CodeGenerator.ViewCellBuilder.createMacro(with: Swift.String, type: CodeGenerator.MacroType) -&gt; Swift.String"
-                  moduleName = "CodeGenerator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Builders/ViewCellBuilder.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "204">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "34C7960F-15CD-49B7-8C4D-FE42CF43614C"
-            shouldBeEnabled = "Yes"
+            uuid = "F965A1B8-D614-4FC6-A97F-5DCA11B4A826"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CodeGenerator/Builders/ViewCellBuilder.swift"
+            filePath = "CodeGenerator/Builders/VariableMacroBuilder.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "createMacro(with:type:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "34C7960F-15CD-49B7-8C4D-FE42CF43614C - a62d33ee270f0282"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CodeGenerator.ViewCellBuilder.createMacro(with: Swift.String, type: CodeGenerator.MacroType) -&gt; Swift.String"
-                  moduleName = "CodeGenerator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Builders/ViewCellBuilder.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "1276">
-               </Location>
-               <Location
-                  uuid = "34C7960F-15CD-49B7-8C4D-FE42CF43614C - a62d33ee270f0282"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CodeGenerator.ViewCellBuilder.createMacro(with: Swift.String, type: CodeGenerator.MacroType) -&gt; Swift.String"
-                  moduleName = "CodeGenerator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Builders/ViewCellBuilder.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "140">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9DD2BF5F-7287-4545-99D2-22DB75285F1F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeGenerator/Helper/Visitors/FuncVisitor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "visit(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

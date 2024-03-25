@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var moduleName = ""
+    @State private var macroName = ""
     @State private var inputCode = ""
     @State private var outputCode = ""
     @State private var resultPreview = ""
@@ -16,12 +19,28 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            // Input Code Text Editor
+            Spacer().frame(height: 32)
+            // Module Name Text Field
+            Text("Module Name")
+                .font(.headline)
+                .padding(.bottom, 2)
+            TextField("Enter module name", text: $moduleName)
+                .textFieldStyle(.roundedBorder)
+                .padding(.bottom, 10)
+            
+            Text("Macro Name")
+                .font(.headline)
+                .padding(.bottom, 2)
+            TextField("Enter macro name", text: $macroName)
+                .textFieldStyle(.roundedBorder)
+                .padding(.bottom, 20)
+            
             Text("Input")
                 .font(.headline)
                 .padding(.bottom, 2)
             TextEditor(text: $inputCode)
                 .frame(minHeight: 100)
+                .font(.system(size: 14))
                 .border(Color.gray, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                 .padding(.bottom, 20)
 
@@ -30,6 +49,7 @@ struct ContentView: View {
                 .font(.headline)
                 .padding(.bottom, 2)
             TextEditor(text: $outputCode)
+                .font(.system(size: 14))
                 .frame(minHeight: 100)
                 .border(Color.gray, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                 .padding(.bottom, 20)
@@ -39,24 +59,30 @@ struct ContentView: View {
                 Text("Preview")
                     .font(.headline)
                     .padding(.bottom, 2)
-                Text(resultPreview)
-                    .frame(minHeight: 100)
-                    .border(Color.gray, width: 1)
-                    .padding(.bottom, 20)
+                ScrollView(.vertical) {
+                    Text(resultPreview)
+                        .frame(maxWidth: .infinity, alignment: .leading) // Align text to the left
+                        .padding()
+                }
+                .frame(minHeight: 200)
+                .border(Color.black, width: 1)
+                .padding(.bottom, 20)
             }
 
             // Generate Button
-            Button("Generate") {
-                // Here you can implement the logic for generating the preview
-                // For this example, I'll just concatenate input and output
-                resultPreview = "Input: \(inputCode)\nOutput: \(outputCode)"
+            Button("Save") {
+                resultPreview = "Module: \n\(moduleName)\n\nMacroName: \n\(macroName)\n\nInput: \n\(inputCode)\n\nOutput: \n\(outputCode)"
 
-                // Saving input and output to UserDefaults
+                // Saving module name, input, and output to UserDefaults
+                defaults?.set(moduleName, forKey: "moduleName")
+                defaults?.set(macroName, forKey: "macroName")
                 defaults?.set(inputCode, forKey: "inputCode")
                 defaults?.set(outputCode, forKey: "outputCode")
             }
             .padding()
             .buttonStyle(.borderedProminent)
+            
+            Spacer().frame(height: 32)
         }
         .padding()
     }

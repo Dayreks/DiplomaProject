@@ -41,16 +41,17 @@ class ViewCellBuilder: Builder {
         guard
             checkIfViewSelected(with: content),
             let name = extractViewClassName(from: content),
-            let macroModuleName = defaults?.object(forKey: "macroModuleName") as? String
+            let moduleName = defaults?.object(forKey: "moduleName") as? String,
+            let macroName = defaults?.object(forKey: "macroName") as? String
         else {
             return ""
         }
         
         return """
             \(type.rawValue)(declaration, names: arbitrary)
-            public macro \(name.lowerCasedFirst)Cell() = #externalMacro(module: "\(macroModuleName)", type: "\(name.capitalizedFirst)Macro")
+            public macro \(macroName.lowerCasedFirst)() = #externalMacro(module: "\(moduleName)", type: "\(macroName.capitalizedFirst)Macro")
             
-            public struct \(name.capitalizedFirst)Macro: DeclarationMacro {
+            public struct \(macroName.capitalizedFirst)Macro: DeclarationMacro {
                 
                 public static func expansion(
                     of node: some FreestandingMacroExpansionSyntax,
@@ -92,7 +93,7 @@ class ViewCellBuilder: Builder {
             @main
             struct CustomMacroPlugin: CompilerPlugin {
                 let providingMacros: [Macro.Type] = [
-                    \(name.capitalizedFirst)Macro.self,
+                    \(macroName.capitalizedFirst)Macro.self,
                 ]
             }
             """

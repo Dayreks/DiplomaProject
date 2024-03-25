@@ -71,7 +71,7 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "/Users/bohdan/OBRIO/nebula-ios/Nebula.xcworkspace"
-            isEnabled = "NO">
+            isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>

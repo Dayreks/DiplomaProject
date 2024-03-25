@@ -12,7 +12,8 @@ struct MenuManager {
     
     static let builders: [Builder] = [
         MethodMacroBuilder(),
-        ViewCellBuilder()
+        ViewCellBuilder(),
+        VariableMacroBuilder()
     ]
     
     static func find(commandIdentifier: String) -> Builder? {

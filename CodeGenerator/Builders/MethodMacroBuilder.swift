@@ -40,18 +40,19 @@ class MethodMacroBuilder: Builder {
         
         guard
             checkIfMethodSelected(with: content),
-            let name = extractFunctionName(from: content),
-            let macroModuleName = defaults?.object(forKey: "macroModuleName") as? String
+            let moduleName = defaults?.object(forKey: "moduleName") as? String,
+            let macroName = defaults?.object(forKey: "macroName") as? String
         else {
             return ""
         }
         
+        defaults?.string(forKey: "inputCode")
         
         return """
             \(type.rawValue)(member, names: arbitrary)
-            public macro \(name.lowerCasedFirst)() = #externalMacro(module: "\(macroModuleName)", type: "\(name.capitalizedFirst)Macro")
+            public macro \(macroName.lowerCasedFirst)() = #externalMacro(module: "\(moduleName)", type: "\(macroName.capitalizedFirst)Macro")
             
-            public struct \(name.capitalizedFirst)Macro: MemberMacro {
+            public struct \(macroName.capitalizedFirst)Macro: MemberMacro {
             
                     public static func expansion(
                         of node: AttributeSyntax,
@@ -69,7 +70,7 @@ class MethodMacroBuilder: Builder {
             @main
             struct CustomMacroPlugin: CompilerPlugin {
                 let providingMacros: [Macro.Type] = [
-                    \(name.capitalizedFirst)Macro.self,
+                    \(macroName.capitalizedFirst)Macro.self,
                 ]
             }
             """

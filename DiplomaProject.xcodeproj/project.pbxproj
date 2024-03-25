@@ -209,6 +209,11 @@
 		473A99C82B7939B500B860EB /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A99C72B7939B500B860EB /* Helper.swift */; };
 		473A99CA2B7939BB00B860EB /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A99C92B7939BB00B860EB /* Builder.swift */; };
 		473A99CC2B793AB900B860EB /* MacroType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A99CB2B793AB900B860EB /* MacroType.swift */; };
+		4767CBFD2BAF22D3008849E6 /* VariableMacroBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767CBFC2BAF22D3008849E6 /* VariableMacroBuilder.swift */; };
+		4767CC952BB05960008849E6 /* DeclSyntax+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767CC942BB05960008849E6 /* DeclSyntax+Common.swift */; };
+		4767CC972BB05969008849E6 /* DeclType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767CC962BB05969008849E6 /* DeclType.swift */; };
+		4767CC992BB06E2B008849E6 /* NSTextView+Disable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767CC982BB06E2B008849E6 /* NSTextView+Disable.swift */; };
+		4767CC9C2BB09DCD008849E6 /* FuncVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767CC9B2BB09DCD008849E6 /* FuncVisitor.swift */; };
 		47B22A042B9F57D900F1236D /* FileCreateScript.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 47B22A032B9F57D900F1236D /* FileCreateScript.scpt */; };
 		47B22A062BA23A6F00F1236D /* String+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B22A052BA23A6F00F1236D /* String+Common.swift */; };
 		47C28E9F2B2640C0007479D4 /* DiplomaProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C28E9E2B2640C0007479D4 /* DiplomaProjectApp.swift */; };
@@ -471,6 +476,11 @@
 		473A99C72B7939B500B860EB /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		473A99C92B7939BB00B860EB /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		473A99CB2B793AB900B860EB /* MacroType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroType.swift; sourceTree = "<group>"; };
+		4767CBFC2BAF22D3008849E6 /* VariableMacroBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableMacroBuilder.swift; sourceTree = "<group>"; };
+		4767CC942BB05960008849E6 /* DeclSyntax+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeclSyntax+Common.swift"; sourceTree = "<group>"; };
+		4767CC962BB05969008849E6 /* DeclType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclType.swift; sourceTree = "<group>"; };
+		4767CC982BB06E2B008849E6 /* NSTextView+Disable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextView+Disable.swift"; sourceTree = "<group>"; };
+		4767CC9B2BB09DCD008849E6 /* FuncVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncVisitor.swift; sourceTree = "<group>"; };
 		47B22A032B9F57D900F1236D /* FileCreateScript.scpt */ = {isa = PBXFileReference; lastKnownFileType = text; path = FileCreateScript.scpt; sourceTree = "<group>"; };
 		47B22A052BA23A6F00F1236D /* String+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Common.swift"; sourceTree = "<group>"; };
 		47C28E9B2B2640C0007479D4 /* DiplomaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiplomaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -868,6 +878,7 @@
 				473A99C92B7939BB00B860EB /* Builder.swift */,
 				4724B6F72B5420190033C00C /* MethodMacroBuilder.swift */,
 				0D3BFC762BA0A75D0032FEF5 /* ViewCellBuilder.swift */,
+				4767CBFC2BAF22D3008849E6 /* VariableMacroBuilder.swift */,
 			);
 			path = Builders;
 			sourceTree = "<group>";
@@ -875,10 +886,12 @@
 		473A99CD2B793AC000B860EB /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				4767CC9A2BB09DC2008849E6 /* Visitors */,
 				473A99C32B7939AF00B860EB /* MenuManager.swift */,
 				473A99C52B7939B100B860EB /* ScriptRunner.swift */,
 				473A99C72B7939B500B860EB /* Helper.swift */,
 				473A99CB2B793AB900B860EB /* MacroType.swift */,
+				4767CC962BB05969008849E6 /* DeclType.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -888,8 +901,17 @@
 			children = (
 				473A99C12B78F7FA00B860EB /* XCSourceTextBuffer+Common.swift */,
 				47B22A052BA23A6F00F1236D /* String+Common.swift */,
+				4767CC942BB05960008849E6 /* DeclSyntax+Common.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4767CC9A2BB09DC2008849E6 /* Visitors */ = {
+			isa = PBXGroup;
+			children = (
+				4767CC9B2BB09DCD008849E6 /* FuncVisitor.swift */,
+			);
+			path = Visitors;
 			sourceTree = "<group>";
 		};
 		47C28E922B2640C0007479D4 = {
@@ -920,6 +942,7 @@
 				47C28EA22B2640C1007479D4 /* Assets.xcassets */,
 				47C28EA72B2640C1007479D4 /* DiplomaProject.entitlements */,
 				47C28EA42B2640C1007479D4 /* Preview Content */,
+				4767CC982BB06E2B008849E6 /* NSTextView+Disable.swift */,
 			);
 			path = DiplomaProject;
 			sourceTree = "<group>";
@@ -1070,6 +1093,7 @@
 			files = (
 				47C28EA12B2640C0007479D4 /* ContentView.swift in Sources */,
 				47C28E9F2B2640C0007479D4 /* DiplomaProjectApp.swift in Sources */,
+				4767CC992BB06E2B008849E6 /* NSTextView+Disable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1101,6 +1125,7 @@
 				0D4ED9652BA49BCE008B7602 /* MultiLineStringLiteralDiagnosticsGenerator.swift in Sources */,
 				0D4ED96A2BA49BCE008B7602 /* UtilsTwo.swift in Sources */,
 				0D4ED91D2BA49BCE008B7602 /* SwiftIDEUtilsCompatibility.swift in Sources */,
+				4767CC9C2BB09DCD008849E6 /* FuncVisitor.swift in Sources */,
 				0D4ED8FE2BA49BCE008B7602 /* BasicFormat.swift in Sources */,
 				0D4ED9402BA49BCE008B7602 /* Expressions.swift in Sources */,
 				0D4ED9872BA49BCE008B7602 /* SyntaxNodesTUVWXYZ.swift in Sources */,
@@ -1108,6 +1133,7 @@
 				473A99C82B7939B500B860EB /* Helper.swift in Sources */,
 				0D4ED9502BA49BCE008B7602 /* StringLiteralRepresentedLiteralValue.swift in Sources */,
 				0D4ED9692BA49BCE008B7602 /* SyntaxExtensions.swift in Sources */,
+				4767CBFD2BAF22D3008849E6 /* VariableMacroBuilder.swift in Sources */,
 				0D4ED9552BA49BCE008B7602 /* SyntaxUtils.swift in Sources */,
 				0D4ED9042BA49BCE008B7602 /* Trivia+FormatExtensions.swift in Sources */,
 				0D4ED98C2BA49BCE008B7602 /* SyntaxAnyVisitor.swift in Sources */,
@@ -1149,6 +1175,7 @@
 				0D4ED9352BA49BCE008B7602 /* LexemeSequence.swift in Sources */,
 				47B22A062BA23A6F00F1236D /* String+Common.swift in Sources */,
 				0D4ED9262BA49BCE008B7602 /* OperatorTable.swift in Sources */,
+				4767CC972BB05969008849E6 /* DeclType.swift in Sources */,
 				0D4ED91C2BA49BCE008B7602 /* NameMatcher.swift in Sources */,
 				0D4ED8FD2BA49BCE008B7602 /* SyntaxProtocol+Initializer.swift in Sources */,
 				0D4ED93E2BA49BCE008B7602 /* Declarations.swift in Sources */,
@@ -1189,6 +1216,7 @@
 				0D4ED9CE2BA49BCE008B7602 /* SyntaxParsable+ExpressibleByStringInterpolation.swift in Sources */,
 				0D4ED9032BA49BCE008B7602 /* SyntaxProtocol+Formatted.swift in Sources */,
 				0D4ED9302BA49BCE008B7602 /* LayoutNodes+Parsable.swift in Sources */,
+				4767CC952BB05960008849E6 /* DeclSyntax+Common.swift in Sources */,
 				0D4ED9C72BA49BCE008B7602 /* Documentation.docc in Sources */,
 				0D4ED9AA2BA49BCE008B7602 /* SourcePresence.swift in Sources */,
 				0D4ED9672BA49BCE008B7602 /* ParserDiagnosticMessages.swift in Sources */,
