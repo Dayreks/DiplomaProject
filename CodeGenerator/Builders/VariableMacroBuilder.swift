@@ -107,6 +107,8 @@ class VariableMacroBuilder: Builder {
             {
                 macroInsertionCode.append("\nlet propertyType = binding.typeAnnotation?.type.description ?? \"Type\"")
                 propertyType = "\\(propertyType)"
+            } else {
+                return "Type missmatch"
             }
             
             return """

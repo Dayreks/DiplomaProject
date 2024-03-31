@@ -73,7 +73,7 @@ struct ContentView: View {
             Button("Save") {
                 resultPreview = "Module: \n\(moduleName)\n\nMacroName: \n\(macroName)\n\nInput: \n\(inputCode)\n\nOutput: \n\(outputCode)"
 
-                // Saving module name, input, and output to UserDefaults
+                
                 defaults?.set(moduleName, forKey: "moduleName")
                 defaults?.set(macroName, forKey: "macroName")
                 defaults?.set(inputCode, forKey: "inputCode")
