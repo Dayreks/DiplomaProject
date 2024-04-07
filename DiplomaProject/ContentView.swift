@@ -9,13 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var moduleName = ""
-    @State private var macroName = ""
-    @State private var inputCode = ""
-    @State private var outputCode = ""
-    @State private var resultPreview = ""
-
-    let defaults = UserDefaults(suiteName: "524636QW8M.group.com.bohdanarkhypchuk.ukma.ua.DiplomaProject")
+    @StateObject private var viewModel = ViewModel()
 
     var body: some View {
         VStack {
@@ -24,21 +18,21 @@ struct ContentView: View {
             Text("Module Name")
                 .font(.headline)
                 .padding(.bottom, 2)
-            TextField("Enter module name", text: $moduleName)
+            TextField("Enter module name", text: $viewModel.moduleName)
                 .textFieldStyle(.roundedBorder)
                 .padding(.bottom, 10)
             
             Text("Macro Name")
                 .font(.headline)
                 .padding(.bottom, 2)
-            TextField("Enter macro name", text: $macroName)
+            TextField("Enter macro name", text: $viewModel.macroName)
                 .textFieldStyle(.roundedBorder)
                 .padding(.bottom, 20)
             
             Text("Input")
                 .font(.headline)
                 .padding(.bottom, 2)
-            TextEditor(text: $inputCode)
+            TextEditor(text: $viewModel.inputCode)
                 .frame(minHeight: 100)
                 .font(.system(size: 14))
                 .border(Color.gray, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
@@ -48,7 +42,7 @@ struct ContentView: View {
             Text("Output")
                 .font(.headline)
                 .padding(.bottom, 2)
-            TextEditor(text: $outputCode)
+            TextEditor(text: $viewModel.outputCode)
                 .font(.system(size: 14))
                 .frame(minHeight: 100)
                 .border(Color.gray, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
@@ -60,7 +54,7 @@ struct ContentView: View {
                     .font(.headline)
                     .padding(.bottom, 2)
                 ScrollView(.vertical) {
-                    Text(resultPreview)
+                    Text(viewModel.resultPreview)
                         .frame(maxWidth: .infinity, alignment: .leading) // Align text to the left
                         .padding()
                 }
@@ -71,13 +65,7 @@ struct ContentView: View {
 
             // Generate Button
             Button("Save") {
-                resultPreview = "Module: \n\(moduleName)\n\nMacroName: \n\(macroName)\n\nInput: \n\(inputCode)\n\nOutput: \n\(outputCode)"
-
-                
-                defaults?.set(moduleName, forKey: "moduleName")
-                defaults?.set(macroName, forKey: "macroName")
-                defaults?.set(inputCode, forKey: "inputCode")
-                defaults?.set(outputCode, forKey: "outputCode")
+                viewModel.buildMacro()
             }
             .padding()
             .buttonStyle(.borderedProminent)
@@ -85,6 +73,11 @@ struct ContentView: View {
             Spacer().frame(height: 32)
         }
         .padding()
+        .alert("Error", isPresented: $viewModel.showingErrorAlert) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text(viewModel.errorMessage)
+        }
     }
 }
 

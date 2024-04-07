@@ -1,55 +1,29 @@
 //
-//  VariableMacroBuilder.swift
-//  CodeGenerator
+//  VariableMacroCreator.swift
+//  DiplomaProject
 //
-//  Created by Bohdan Arkhypchuk on 23.03.2024.
+//  Created by Bohdan Arkhypchuk on 07.04.2024.
 //
 
 import Foundation
-import XcodeKit
-import AppKit
 
-class VariableMacroBuilder: Builder {
+final class VariableMacroCreator: MacrosCreator {
     
-    var title: String {
-        "Generate Variable Macro"
-    }
+    private let defaults = UserDefaults(suiteName: "524636QW8M.group.com.bohdanarkhypchuk.ukma.ua.DiplomaProject")
     
-    func build(with invocation: XCSourceEditorCommandInvocation) {
-        let source = invocation.buffer
-        
-        guard
-            let selectionRange = source.selections.firstObject as? XCSourceTextRange,
-            let selectedText = source.extractSelectedText(with: selectionRange)
-        else {
-            print("No selection")
-            return
-        }
-        
-        let pasteboard = NSPasteboard.general
-        pasteboard.declareTypes([.string], owner: nil)
-        
-        pasteboard.setString(
-            (try? createMacro(with: selectedText, type: .attached)) ?? "",
-            forType: .string
-        )
-    }
-    
-    private func createMacro(with content: String, type: MacroType) throws -> String {
-        let defaults = UserDefaults(suiteName: "524636QW8M.group.com.bohdanarkhypchuk.ukma.ua.DiplomaProject")
-        
-        guard
-            let inputCode = defaults?.object(forKey: "inputCode") as? String,
-            let outputCode = defaults?.object(forKey: "outputCode") as? String,
-            let moduleName = defaults?.object(forKey: "moduleName") as? String,
-            let macroName = defaults?.object(forKey: "macroName") as? String
-        else {
-            return ""
-        }
+    func createMacro(
+        inputCode: String,
+        outputCode: String?,
+        moduleName: String,
+        macroName: String
+    ) throws -> String {
+        guard !inputCode.isEmpty else { throw CodeGenerationError.emptyInput }
+        guard let outputCode, !outputCode.isEmpty else { throw CodeGenerationError.emptyOutput }
+        guard !moduleName.isEmpty else { throw CodeGenerationError.emptyModuleName }
+        guard !macroName.isEmpty else { throw CodeGenerationError.enmptyMacroName }
         
         let parsedInput = DeclSyntax(stringLiteral: inputCode)
         let parsedOutput = DeclSyntax(stringLiteral: outputCode)
-        
        
         switch (parsedInput.declType, parsedOutput.declType) {
         case (.variable, .function):
@@ -59,7 +33,7 @@ class VariableMacroBuilder: Builder {
                 let binding = variableSyntax.bindings.first,
                 let identifier = binding.pattern.as(IdentifierPatternSyntax.self)
             else {
-                break
+                throw CodeGenerationError.incorrectFormat
             }
             
             let funcVisitor = try FuncVisitor(source: outputCode)
@@ -69,7 +43,7 @@ class VariableMacroBuilder: Builder {
             }
                                                 
             // Extract property name and type
-            guard 
+            guard
                 let binding = variableDecl.bindings.first,
                 let identifier = binding.pattern.as(IdentifierPatternSyntax.self)
             else {
@@ -108,11 +82,11 @@ class VariableMacroBuilder: Builder {
                 macroInsertionCode.append("\nlet propertyType = binding.typeAnnotation?.type.description ?? \"Type\"")
                 propertyType = "\\(propertyType)"
             } else {
-                return "Type missmatch"
+                throw CodeGenerationError.typeMissMatch
             }
             
             return """
-            \(type.rawValue)(peer, names: arbitrary)
+            @attached(peer, names: arbitrary)
             public macro \(macroName.lowerCasedFirst)() = #externalMacro(module: "\(moduleName)", type: "\(macroName.capitalizedFirst)Macro")
                     
             public struct \(macroName.capitalizedFirst)Macro: PeerMacro {
@@ -141,12 +115,8 @@ class VariableMacroBuilder: Builder {
                 ]
             }
             """
-            
         default:
             return ""
         }
-        
-        return ""
     }
 }
-

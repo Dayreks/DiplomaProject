@@ -23,20 +23,20 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "642C325F-362C-47E5-AD8B-FCF2BF59E6FC"
-            shouldBeEnabled = "No"
+            uuid = "FEB8D83E-A390-40C3-89D7-1AD5074E8A17"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodeGenerator/Helper/ScriptRunner.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "run(fileName:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "642C325F-362C-47E5-AD8B-FCF2BF59E6FC - 226ee88a685d7a08"
+                  uuid = "FEB8D83E-A390-40C3-89D7-1AD5074E8A17 - 226ee88a685d7911"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -46,42 +46,41 @@
                   urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Helper/ScriptRunner.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "436">
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "1080">
                </Location>
                <Location
-                  uuid = "642C325F-362C-47E5-AD8B-FCF2BF59E6FC - 226ee88a685d7a4a"
+                  uuid = "FEB8D83E-A390-40C3-89D7-1AD5074E8A17 - 74e5d9145c2a3e1b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "CodeGenerator.ScriptRunner.run(fileName: Swift.String) -&gt; ()"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;__C.NSAppleEventDescriptor&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CodeGenerator.ScriptRunner.run(fileName: Swift.String) -&gt; ()"
                   moduleName = "CodeGenerator"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Helper/ScriptRunner.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "560">
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "FEB8D83E-A390-40C3-89D7-1AD5074E8A17 - 74e5d9145c2a3e3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;__C.NSAppleEventDescriptor&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CodeGenerator.ScriptRunner.run(fileName: Swift.String) -&gt; ()"
+                  moduleName = "CodeGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Helper/ScriptRunner.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "60">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FEB8D83E-A390-40C3-89D7-1AD5074E8A17"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CodeGenerator/Helper/ScriptRunner.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "run(fileName:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -97,38 +96,6 @@
             startingLineNumber = "13"
             endingLineNumber = "13"
             landmarkName = "extractSelectedText(with:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FEF7C9B4-3A7A-43E4-ADA7-E4EB54CF55FF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CodeGenerator/Builders/MethodMacroBuilder.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "createMacro(with:type:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F965A1B8-D614-4FC6-A97F-5DCA11B4A826"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CodeGenerator/Builders/VariableMacroBuilder.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "createMacro(with:type:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -151,49 +118,238 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "98660A2A-DE93-4B02-A9DF-C8EE1DF9444A"
-            shouldBeEnabled = "No"
+            uuid = "ED13ADF7-F549-4FD2-AC4C-A3832B661F05"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CodeGenerator/Builders/VariableMacroBuilder.swift"
+            filePath = "CodeGenerator/Helper/ScriptRunner.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "createMacro(with:type:)"
-            landmarkType = "7">
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "scriptPath"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "ED13ADF7-F549-4FD2-AC4C-A3832B661F05 - 55269028ff455235"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeGenerator.ScriptRunner.scriptPath.getter : Swift.Optional&lt;Foundation.URL&gt;"
+                  moduleName = "CodeGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Helper/ScriptRunner.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "320">
+               </Location>
+               <Location
+                  uuid = "ED13ADF7-F549-4FD2-AC4C-A3832B661F05 - 55269028ff455235"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeGenerator.ScriptRunner.scriptPath.getter : Swift.Optional&lt;Foundation.URL&gt;"
+                  moduleName = "CodeGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Helper/ScriptRunner.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "188">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8B19CC83-F7A1-4338-9ED3-9D40A3555094"
-            shouldBeEnabled = "No"
+            uuid = "DB0B4E7F-8B1E-44BE-A3D6-C97ABC855F87"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CodeGenerator/Builders/VariableMacroBuilder.swift"
+            filePath = "CodeGenerator/Helper/ScriptRunner.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "createMacro(with:type:)"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fileScriptPath(fileName:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DB0B4E7F-8B1E-44BE-A3D6-C97ABC855F87 - a2a4b2605846e6a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeGenerator.ScriptRunner.fileScriptPath(fileName: Swift.String) -&gt; Swift.Optional&lt;Foundation.URL&gt;"
+                  moduleName = "CodeGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Helper/ScriptRunner.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "304">
+               </Location>
+               <Location
+                  uuid = "DB0B4E7F-8B1E-44BE-A3D6-C97ABC855F87 - a2a4b2605846e6a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeGenerator.ScriptRunner.fileScriptPath(fileName: Swift.String) -&gt; Swift.Optional&lt;Foundation.URL&gt;"
+                  moduleName = "CodeGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Helper/ScriptRunner.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "212">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E405B683-E509-4126-BD11-E70D88961EDA"
-            shouldBeEnabled = "No"
+            uuid = "A05750E5-4F34-4DBB-9879-60364C871178"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CodeGenerator/Builders/VariableMacroBuilder.swift"
+            filePath = "CodeGenerator/Helper/ScriptRunner.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "createMacro(with:type:)"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "run(fileName:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A05750E5-4F34-4DBB-9879-60364C871178 - 226ee88a685d7972"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeGenerator.ScriptRunner.run(fileName: Swift.String) -&gt; ()"
+                  moduleName = "CodeGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Helper/ScriptRunner.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "1016">
+               </Location>
+               <Location
+                  uuid = "A05750E5-4F34-4DBB-9879-60364C871178 - 226ee88a685d7972"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeGenerator.ScriptRunner.run(fileName: Swift.String) -&gt; ()"
+                  moduleName = "CodeGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Helper/ScriptRunner.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "844">
+               </Location>
+               <Location
+                  uuid = "A05750E5-4F34-4DBB-9879-60364C871178 - 74e5d9145c2a3e3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;__C.NSAppleEventDescriptor&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CodeGenerator.ScriptRunner.run(fileName: Swift.String) -&gt; ()"
+                  moduleName = "CodeGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Helper/ScriptRunner.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "A05750E5-4F34-4DBB-9879-60364C871178 - 226ee88a685d7972"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeGenerator.ScriptRunner.run(fileName: Swift.String) -&gt; ()"
+                  moduleName = "CodeGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Helper/ScriptRunner.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "996">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "339700D5-DE1D-4522-9305-DC7626729441"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeGenerator/Helper/ScriptRunner.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "run(fileName:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "339700D5-DE1D-4522-9305-DC7626729441 - 226ee88a685d7ad7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeGenerator.ScriptRunner.run(fileName: Swift.String) -&gt; ()"
+                  moduleName = "CodeGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Helper/ScriptRunner.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "788">
+               </Location>
+               <Location
+                  uuid = "339700D5-DE1D-4522-9305-DC7626729441 - 226ee88a685d7ad7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeGenerator.ScriptRunner.run(fileName: Swift.String) -&gt; ()"
+                  moduleName = "CodeGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Helper/ScriptRunner.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "628">
+               </Location>
+               <Location
+                  uuid = "339700D5-DE1D-4522-9305-DC7626729441 - 226ee88a685d7ad7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeGenerator.ScriptRunner.run(fileName: Swift.String) -&gt; ()"
+                  moduleName = "CodeGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/CodeGenerator/Helper/ScriptRunner.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "776">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

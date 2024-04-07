@@ -56,12 +56,11 @@ class ScriptRunner {
             return
         }
         
-        let event = eventDescriptior(functionName: "")
-        script.execute(withAppleEvent: event, completionHandler: { _, error in
+        script.execute(withAppleEvent: nil) { _, error in
             if let error = error {
                 print(error)
             }
-        })
+        }
     }
 }
 

@@ -7,11 +7,10 @@
 //
 
 import Foundation
-import XcodeKit
 
 protocol Builder {
     
     var title: String { get }
     
-    func build(with invocation: XCSourceEditorCommandInvocation)
+    func build()
 }
