@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		470E5EFA2BC2F92E00CC2B06 /* TriggerIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470E5EF92BC2F92E00CC2B06 /* TriggerIdentifier.swift */; };
+		470E5EFC2BC2F96900CC2B06 /* TriggerIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470E5EFB2BC2F96900CC2B06 /* TriggerIdentifier.swift */; };
 		473A99C22B78F7FA00B860EB /* XCSourceTextBuffer+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A99C12B78F7FA00B860EB /* XCSourceTextBuffer+Common.swift */; };
 		473A99C42B7939AF00B860EB /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A99C32B7939AF00B860EB /* MenuManager.swift */; };
 		473A99C62B7939B100B860EB /* ScriptRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473A99C52B7939B100B860EB /* ScriptRunner.swift */; };
@@ -284,6 +286,8 @@
 
 /* Begin PBXFileReference section */
 		0D3BFC762BA0A75D0032FEF5 /* ViewCellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCellBuilder.swift; sourceTree = "<group>"; };
+		470E5EF92BC2F92E00CC2B06 /* TriggerIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerIdentifier.swift; sourceTree = "<group>"; };
+		470E5EFB2BC2F96900CC2B06 /* TriggerIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerIdentifier.swift; sourceTree = "<group>"; };
 		4724B6F72B5420190033C00C /* MethodMacroBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodMacroBuilder.swift; sourceTree = "<group>"; };
 		473A99C12B78F7FA00B860EB /* XCSourceTextBuffer+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCSourceTextBuffer+Common.swift"; sourceTree = "<group>"; };
 		473A99C32B7939AF00B860EB /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
@@ -537,13 +541,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4724B6F62B541FDC0033C00C /* Builders */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Builders;
-			sourceTree = "<group>";
-		};
 		473A99CD2B793AC000B860EB /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -551,6 +548,7 @@
 				473A99C52B7939B100B860EB /* ScriptRunner.swift */,
 				473A99C72B7939B500B860EB /* Helper.swift */,
 				47C1B1692BC2E3780044EE0F /* StorageKeys.swift */,
+				470E5EF92BC2F92E00CC2B06 /* TriggerIdentifier.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -580,6 +578,9 @@
 				47C1B1672BC2E0190044EE0F /* CodeGenerationError.swift */,
 				47B22A052BA23A6F00F1236D /* String+Common.swift */,
 				4767CC942BB05960008849E6 /* DeclSyntax+Common.swift */,
+				4767CC982BB06E2B008849E6 /* NSTextView+Disable.swift */,
+				47C1B16B2BC2EF130044EE0F /* StorageKeys.swift */,
+				470E5EFB2BC2F96900CC2B06 /* TriggerIdentifier.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -988,14 +989,11 @@
 				47C1B1652BC2B4F80044EE0F /* ViewModel.swift */,
 				47C1B17E2BC2F0990044EE0F /* MacrosCreators */,
 				47C1B16E2BC2EF760044EE0F /* Helpers */,
-				47CA20CB2B8B6ABB00446382 /* Info.plist */,
 				47C1B3232BC2F3550044EE0F /* Sources */,
-				4724B6F62B541FDC0033C00C /* Builders */,
+				47CA20CB2B8B6ABB00446382 /* Info.plist */,
 				47C28EA22B2640C1007479D4 /* Assets.xcassets */,
 				47C28EA72B2640C1007479D4 /* DiplomaProject.entitlements */,
 				47C28EA42B2640C1007479D4 /* Preview Content */,
-				4767CC982BB06E2B008849E6 /* NSTextView+Disable.swift */,
-				47C1B16B2BC2EF130044EE0F /* StorageKeys.swift */,
 			);
 			path = DiplomaProject;
 			sourceTree = "<group>";
@@ -1179,6 +1177,7 @@
 				47C1B41E2BC2F3560044EE0F /* TokenPrecedence.swift in Sources */,
 				47C1B46A2BC2F3560044EE0F /* SyntaxKind.swift in Sources */,
 				47C1B43E2BC2F3560044EE0F /* LocationMarkers.swift in Sources */,
+				470E5EFC2BC2F96900CC2B06 /* TriggerIdentifier.swift in Sources */,
 				47C1B42B2BC2F3560044EE0F /* IsValidIdentifier.swift in Sources */,
 				47C1B4372BC2F3560044EE0F /* IntegerLiteralUtilities.swift in Sources */,
 				47C1B40A2BC2F3560044EE0F /* TokenSpec.swift in Sources */,
@@ -1366,6 +1365,7 @@
 				47C1B16A2BC2E3780044EE0F /* StorageKeys.swift in Sources */,
 				473A99C22B78F7FA00B860EB /* XCSourceTextBuffer+Common.swift in Sources */,
 				47C1B1792BC2F06E0044EE0F /* MethodMacroBuilder.swift in Sources */,
+				470E5EFA2BC2F92E00CC2B06 /* TriggerIdentifier.swift in Sources */,
 				47C28EB92B26410E007479D4 /* SourceEditorExtension.swift in Sources */,
 				47C1B4BD2BC2F7410044EE0F /* VariableMacroOutputBuilder.swift in Sources */,
 				47C28EBB2B26410E007479D4 /* SourceEditorCommand.swift in Sources */,

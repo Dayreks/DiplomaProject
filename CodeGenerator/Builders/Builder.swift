@@ -11,6 +11,5 @@ import Foundation
 protocol Builder {
     
     var title: String { get }
-    
-    func build()
+    var triggerIdentifier: TriggerIdentifier { get }
 }

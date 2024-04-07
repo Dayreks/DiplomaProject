@@ -42,11 +42,14 @@ struct ContentView: View {
             Text("Output")
                 .font(.headline)
                 .padding(.bottom, 2)
+                .foregroundColor(viewModel.isOutputBlocked ? .gray : .primary)
             TextEditor(text: $viewModel.outputCode)
                 .font(.system(size: 14))
                 .frame(minHeight: 100)
                 .border(Color.gray, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                 .padding(.bottom, 20)
+                .opacity(viewModel.isOutputBlocked ? 0.5 : 1)
+                .disabled(viewModel.isOutputBlocked)
 
             // Preview Window
             VStack {
@@ -64,7 +67,7 @@ struct ContentView: View {
             }
 
             // Generate Button
-            Button("Save") {
+            Button("Generate Macro") {
                 viewModel.buildMacro()
             }
             .padding()
@@ -76,7 +79,7 @@ struct ContentView: View {
         .alert("Error", isPresented: $viewModel.showingErrorAlert) {
             Button("OK", role: .cancel) { }
         } message: {
-            Text(viewModel.errorMessage)
+            Text(viewModel.errorMessage ?? "")
         }
     }
 }

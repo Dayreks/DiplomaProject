@@ -7,13 +7,13 @@
 
 import Foundation
 
-public class VariableMacroOutputBuilder: Builder {
+class VariableMacroOutputBuilder: Builder {
     
-    public var title: String {
+    var title: String {
         "Generate Variable Macro with Output"
     }
     
-    func build() {
-        
+    var triggerIdentifier: TriggerIdentifier {
+        .variableOutputMacro
     }
 }

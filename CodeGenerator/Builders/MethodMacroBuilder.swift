@@ -13,7 +13,7 @@ public class MethodMacroBuilder: Builder {
         "Generate Method Macro"
     }
     
-    func build() {
-        
+    var triggerIdentifier: TriggerIdentifier {
+        .methodMacro
     }
 }

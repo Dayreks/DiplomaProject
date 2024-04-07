@@ -7,14 +7,14 @@
 
 import Foundation
 
-public class VariableMacroInputBuilder: Builder {
+class VariableMacroInputBuilder: Builder {
     
-    public var title: String {
+    var title: String {
         "Generate Variable Macro with Input"
     }
-    
-    func build() {
-        
+
+    var triggerIdentifier: TriggerIdentifier {
+        .variableInputMacro
     }
 }
 

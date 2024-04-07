@@ -7,14 +7,15 @@
 
 import Foundation
 
-public class ViewCellBuilder: Builder {
+class ViewCellBuilder: Builder {
     
-    public var title: String {
+    var title: String {
         "Generate View Cell Macro"
     }
     
-    func build() {
-        
+    var triggerIdentifier: TriggerIdentifier {
+        .viewCellMacro
     }
+    
 }
 

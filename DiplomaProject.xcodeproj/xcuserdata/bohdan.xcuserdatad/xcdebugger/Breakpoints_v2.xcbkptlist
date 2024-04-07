@@ -352,5 +352,53 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18569621-1512-4164-AE98-F185CD425EC8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DiplomaProject/ViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "buildMacro()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "18569621-1512-4164-AE98-F185CD425EC8 - 452f2c4846c9255d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DiplomaProject.ViewModel.buildMacro() -&gt; ()"
+                  moduleName = "DiplomaProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/DiplomaProject/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  uuid = "18569621-1512-4164-AE98-F185CD425EC8 - 452f2c4846c9255d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DiplomaProject.ViewModel.buildMacro() -&gt; ()"
+                  moduleName = "DiplomaProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bohdan/Library/Mobile%20Documents/com~apple~CloudDocs/Diploma/DiplomaProject/DiplomaProject/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

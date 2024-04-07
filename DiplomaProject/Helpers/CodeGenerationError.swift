@@ -11,7 +11,7 @@ enum CodeGenerationError: Error {
     
     case emptyInput, emptyOutput, enmptyMacroName, emptyModuleName, typeMissMatch, incorrectFormat, unexpectedDeclarations
     
-    var localizedDescription: String {
+    var message: String {
         switch self {
         case .emptyInput:
             "The input is empty"

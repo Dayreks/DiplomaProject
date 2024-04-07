@@ -9,9 +9,8 @@ import Foundation
 
 enum StorageKeys {
     
+    static let isOutputBlocked = "isOutputBlocked"
+    static let triggerIdentifier = "triggerIdentifier"
     static let inputCode = "inputCode"
-    static let resultPreview = "resultPreview"
-    static let moduleName = "moduleName"
-    static let macroName = "macroName"
     static let outputCode = "outputCode"
 }
