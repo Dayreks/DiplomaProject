@@ -23,8 +23,8 @@ final class ViewModel: ObservableObject {
     private var defaults = UserDefaults(suiteName: "524636QW8M.group.com.bohdanarkhypchuk.ukma.ua.DiplomaProject")
     
     init() {
-        inputCode =  defaults?.string(forKey: StorageKeys.inputCode) ?? ""
-        outputCode =  defaults?.string(forKey: StorageKeys.outputCode) ?? ""
+        inputCode =  defaults?.string(forKey: StorageKeys.inputCode)?.trimmingTrailingWhitespace() ?? ""
+        outputCode =  defaults?.string(forKey: StorageKeys.outputCode)?.trimmingTrailingWhitespace() ?? ""
         isOutputBlocked = defaults?.bool(forKey: StorageKeys.isOutputBlocked) ?? false
     }
     
