@@ -73,6 +73,12 @@ struct ContentView: View {
             .padding()
             .buttonStyle(.borderedProminent)
             
+            Button("Copy Preview") {
+                viewModel.copyPreviewToClipboard()
+            }
+            .padding()
+            .buttonStyle(.bordered)
+            
             Spacer().frame(height: 32)
         }
         .padding()

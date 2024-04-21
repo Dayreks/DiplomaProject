@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AppKit
 
 final class ViewModel: ObservableObject {
     
@@ -42,6 +43,13 @@ final class ViewModel: ObservableObject {
             self.errorMessage = (error as? CodeGenerationError)?.message
             self.showingErrorAlert = true
         }
+    }
+    
+    func copyPreviewToClipboard() {
+        let pasteboard = NSPasteboard.general
+        pasteboard.declareTypes([.string], owner: nil)
+        
+        pasteboard.setString(resultPreview, forType: .string)
     }
     
     private func getCurrentMacroCreator() -> MacrosCreator? {
